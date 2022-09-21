@@ -2,7 +2,7 @@
 Course: PROG1700
 Assignment 1 - Program 3 Imperial Measure to Metric Conversion
 Student: Karen Freeman
-Date: Sept 18, 2022
+Date: Sept 21, 2022
 Description: This application converts imperial measure to metric
 */
 
@@ -31,7 +31,7 @@ function main() {
     //Output
     console.log(totalOunces);
 
-    console.log("The metric weight is " + metricTons + ", " + totalKilos); 
+    console.log("The metric weight is " + metricTonscl + ", " + totalKilos); 
 }
 
 // DO NOT EDIT: Trigger our main function to launch the program

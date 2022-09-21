@@ -2,7 +2,7 @@
 Course: PROG1700
 Assignment 1 - Program 1
 Student: Karen Freeman
-Date: Sept 18, 2022
+Date: Sept 21, 2022
 Description: This application helps Hipster's records store add up the total cost for the customer. It includes the company's markup.
 
  1.	Program START

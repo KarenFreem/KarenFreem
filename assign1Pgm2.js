@@ -2,7 +2,7 @@
 Course: PROG1700
 Assignment 1 - Program 2
 Student: Karen Freeman
-Date: Sept 18, 2022
+Date: Sept 21, 2022
 Description: This application helps calculate interest on a bank loan for the customer
 
 Weekly Loan Calculator
