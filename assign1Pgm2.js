@@ -7,11 +7,25 @@ Description: This application helps calculate interest on a bank loan for the cu
 
 Weekly Loan Calculator
 
-1.	Program START
-2.	Prompt the user to enter the amount of their loan and save it in the variable called loanAmount
-3.	Prompt the user for the interest rate and save it in a variable called interestRate
-4.	Prompt the user for the number of years and save it in a variable called years
-5.	Calculate the weekly payment by doing the calculations of:
+Program START
+Prompt the user to enter the amount of their loan and save it in the variable called loanAmount
+Prompt the user for the interest rate and save it in a variable called interestRate
+Prompt the user for the number of years and save it in a variable called years
+Calculate the weekly payment by doing the calculations of:
+
+Step 1: iAmount = interest rate /5200
+Step 2: Break down the calculations for weekly payment:
+
+The weekly payment is equalt to iAmount/(1-1+iAmount)**(-52 * years) *principle
+
+Create a interim variable to hold the number for the next process:
+        var interVariable = 1 - (1 + iAmount)**(-52 * years)
+    
+Then create a variable called weeklyPayment and perform the following calculations to find the weekly payment:
+        parseFloat(iAmount / interVariable) * loanAmount 
+
+Display: the weekly payment to the user
+Program END 
 
 Program END 
 Pseudocode - END
@@ -39,18 +53,16 @@ function main()
      //Calculations 
      //The bank calculates the amount of weekly payment as:
      
-     var interestAmount = parseFloat(loanAmount * years * interestRate /100);
-     var totalAmount = parseFloat(interestAmount + loanAmount);
-     
-     var yearsToWeeks = parseFloat(years * 52);
-     var weeklyPayment = parseFloat(totalAmount / yearsToWeeks);
+     var iAmount = interestRate / 5200;
+
+     var interVariable = 1 - (1 + iAmount)**(-52 * years);
     
-       //Output
+     var weeklyPayment = parseFloat(iAmount / interVariable) * loanAmount; 
+
+    //Output
     console.log("The loanAmount is: $" + loanAmount.toFixed(2));
     console.log("The interest rate is: " + interestRate);
-    console.log("The years are: " + years);
-    console.log("The number of weeks for the loan is: " + yearsToWeeks);
-    console.log("The amount of the interest is: $" + interestAmount);
+    console.log("The years are: " + years +"\n");
     console.log("The weekly payment is: $" + weeklyPayment.toFixed(2));
         
  }
