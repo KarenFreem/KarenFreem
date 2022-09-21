@@ -5,7 +5,7 @@ Student: Karen Freeman
 Date: Sept 21, 2022
 Description: This application helps Hipster's records store add up the total cost for the customer. It includes the company's markup.
 
- 1.	Program START
+1.	Program START
 2.	Prompt to ask the user to enter their name and store it in a variable called custName
 3.	Prompt to ask the user for their distance in kilometers for delivery and store it in a variable called deliveryDist
 4.	Prompt to ask the user for the cost of records purchased and store it in a variable called wholesaleCost

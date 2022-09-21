@@ -59,7 +59,7 @@ function main()
     
      var weeklyPayment = parseFloat(iAmount / interVariable) * loanAmount; 
 
-    //Output
+             //Output
     console.log("The loanAmount is: $" + loanAmount.toFixed(2));
     console.log("The interest rate is: " + interestRate);
     console.log("The years are: " + years +"\n");
