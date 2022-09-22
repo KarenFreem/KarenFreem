@@ -3,10 +3,10 @@ Course: PROG1700
 Assignment 1 - Program 2
 Student: Karen Freeman
 Date: Sept 21, 2022
-Description: This application helps calculate interest on a bank loan for the customer
+Description: This application helps calculate the weekly payment on a loan for the user
 
+Pseudocode:
 Weekly Loan Calculator
-
 Program START
 Prompt the user to enter the amount of their loan and save it in the variable called loanAmount
 Prompt the user for the interest rate and save it in a variable called interestRate
@@ -16,15 +16,15 @@ Calculate the weekly payment by doing the calculations of:
 Step 1: iAmount = interest rate /5200
 Step 2: Break down the calculations for weekly payment:
 
-The weekly payment is equalt to iAmount/(1-1+iAmount)**(-52 * years) *principle
+        The weekly payment is equal to iAmount/(1-1+iAmount)**(-52 * years) *principle
 
-Create a interim variable to hold the number for the next process:
-        var interVariable = 1 - (1 + iAmount)**(-52 * years)
+        Create a interim variable to hold the number for the next process:
+                var interVariable = 1 - (1 + iAmount)**(-52 * years)
     
-Then create a variable called weeklyPayment and perform the following calculations to find the weekly payment:
-        parseFloat(iAmount / interVariable) * loanAmount 
+        Then create a variable called weeklyPayment and perform the following calculations to find the weekly payment:
+                parseFloat(iAmount / interVariable) * loanAmount 
 
-Display: the weekly payment to the user
+Display the weekly payment to the user
 Program END 
 
 Program END 
@@ -45,7 +45,7 @@ function main()
     
      //Input
     //Readline module
-    var loanAmount = parseFloat(readlineSync.question("Enter the amount of loan: "));
+    var loanAmount = parseFloat(readlineSync.question("Enter the amount of the loan: "));
     var interestRate = parseFloat(readlineSync.question("Enter the interest rate (%): "));
     var years = parseFloat(readlineSync.question("Enter the number of years: "));
     
@@ -59,7 +59,7 @@ function main()
     
      var weeklyPayment = parseFloat(iAmount / interVariable) * loanAmount; 
 
-             //Output
+    //Output
     console.log("The loanAmount is: $" + loanAmount.toFixed(2));
     console.log("The interest rate is: " + interestRate);
     console.log("The years are: " + years +"\n");
