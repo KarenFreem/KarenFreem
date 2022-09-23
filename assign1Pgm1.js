@@ -6,6 +6,8 @@ Date: Sept 21, 2022
 Description: This application helps Hipster's records store add up the total 
 cost for the customer. It includes the company's markup.
 
+--Making a change
+
 Pseudocode:
 1.	Program START
 2.	Prompt to ask the user to enter their name and store it in a variable called custName
