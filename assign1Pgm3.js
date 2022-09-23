@@ -37,23 +37,24 @@ function main() {
 
     //Input
     //Readline module
-    var numofTons = parseFloat(readlineSync.question("Enter the number of tons: "));
-    var numofStones = parseFloat(readlineSync.question("Enter the number of stone: "));
-    var numofPounds = parseFloat(readlineSync.question("Enter the number of pounds: "));
-    var numofOunces = parseFloat(readlineSync.question("Enter the number of ounces: "));
+    var numofTons = parseInt(readlineSync.question("Enter the number of tons: "));
+    var numofStones = parseInt(readlineSync.question("Enter the number of stone: "));
+    var numofPounds = parseInt(readlineSync.question("Enter the number of pounds: "));
+    var numofOunces = parseInt(readlineSync.question("Enter the number of ounces: "));
 
     //Calculations
     var totalOunces = parseInt((35840 * numofTons) + (224 * numofStones) + (16 * numofPounds) + numofOunces);
     var totalKilos = parseInt(totalOunces / 35.274);
     var metricTons = parseInt(totalKilos / 1000);
+    var varkilos =  parseInt(totalKilos - (1000 * numofTons));
   
     // var grams = 
     console.log("the metric tons are: " + metricTons);
-    console.log("The kilos are: " + totalKilos);
+    console.log("The kilos are: " + varkilos);
    // console.log("The grams are: " + );
 
     //Output
-    console.log("The metric weight is " + metricTons + " metric tons, " + totalKilos + " kilos, and "); 
+    console.log("The metric weight is " + metricTons + " metric tons, " + varkilos + " kilos, and "); 
 }
 
 // DO NOT EDIT: Trigger our main function to launch the program
