@@ -48,13 +48,15 @@ function main() {
     var metricTons = parseInt(totalKilos / 1000);
     var varkilos =  parseInt(totalKilos - (1000 * numofTons));
   
-    // var grams = 
+   
     console.log("the metric tons are: " + metricTons);
     console.log("The kilos are: " + varkilos);
    // console.log("The grams are: " + );
 
     //Output
-    console.log("The metric weight is " + metricTons + " metric tons, " + varkilos + " kilos, and "); 
+    var outputText = `The metric weight is ${metricTons} metric tons, ${varkilos} kilos, and`; 
+    console.log(outputText); 
+
 }
 
 // DO NOT EDIT: Trigger our main function to launch the program

@@ -11,6 +11,9 @@ Program START
 Prompt the user to enter the amount of their loan and save it in the variable called loanAmount
 Prompt the user for the interest rate and save it in a variable called interestRate
 Prompt the user for the number of years and save it in a variable called years
+Make a variable called iAmount whcih is used as a temporary variable to hold the value of the interest rate / 5200 (constant amount)
+Make a variable called 
+
 Calculate the weekly payment by doing the calculations of:
 
 Step 1: iAmount = interest rate /5200
@@ -60,11 +63,11 @@ function main()
      var weeklyPayment = parseFloat(iAmount / interVariable) * loanAmount; 
 
     //Output
-    console.log("The loanAmount is: $" + loanAmount.toFixed(2));
-    console.log("The interest rate is: " + interestRate);
-    console.log("The years are: " + years +"\n");
-    console.log("The weekly payment is: $" + weeklyPayment.toFixed(2));
-        
+    console.log(`The loanAmount is: $${loanAmount.toFixed(2)}`);
+    console.log(`The interest rate is: ${interestRate}`);
+    console.log(`The years are: ${years}\n`);
+    console.log(`The weekly payment is: $${weeklyPayment.toFixed(2)}`);
+    
  }
 
 // DO NOT EDIT: Trigger our main function to launch the program

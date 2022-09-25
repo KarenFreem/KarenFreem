@@ -47,10 +47,10 @@ function main()
     var totalCost = parseFloat(purchaseCost + deliveryCost); 
 
     //Output
-    console.log("\nPurchase summary for " + custName); 
-    console.log("Delivery Cost: $" + deliveryCost.toFixed(2));
-    console.log("Purchase Cost: $" + purchaseCost.toFixed(2));
-    console.log("Total Cost: $" + totalCost.toFixed(2)); 
+    console.log(`\nPurchase summary for ${custName}`); 
+    console.log(`Delivery Cost: $${deliveryCost.toFixed(2)}`);
+    console.log(`Purchase Cost: $${purchaseCost.toFixed(2)}`);
+    console.log(`Total Cost: $${totalCost.toFixed(2)}`); 
  }
 
 // DO NOT EDIT: Trigger our main function to launch the program
