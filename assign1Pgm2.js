@@ -62,11 +62,12 @@ function main()
     
      var weeklyPayment = parseFloat(iAmount / interVariable) * loanAmount; 
 
-    //Output
-    console.log(`The loanAmount is: $${loanAmount.toFixed(2)}`);
-    console.log(`The interest rate is: ${interestRate}`);
-    console.log(`The years are: ${years}\n`);
-    console.log(`The weekly payment is: $${weeklyPayment.toFixed(2)}`);
+    //Output - these are the test lines I used to make sure I was getting the correct values:
+    //console.log(`The loanAmount is: $${loanAmount.toFixed(2)}`);
+    //console.log(`The interest rate is: ${interestRate}`);
+    //console.log(`The years are: ${years}\n`);
+    
+    console.log(`\nYour weekly payment will be: $${weeklyPayment.toFixed(2)}`);
     
  }
 

@@ -14,8 +14,8 @@ Program START
 3.Prompt the user to enter the number of pounds
 4.Prompt the user to enter the number of ounces
 
-5.Calculate the weight by doing the following calculations:
-        First calculate the ounces:
+5.Calculate the weight by performing the following calculations:
+        First, convert all the weights to ounces:
                 total ounces = 35840 * tons + 224 * stone + 16 * pounds + ounces
 
         Calculate the kilos by doing the following calculations:
@@ -24,8 +24,18 @@ Program START
         Calculate the tons by doing the following calculations:
                 use parseInt function to break down the kilos: 
                 metric tons = parseInt(kilos/1000)
-Calculate the ounces by dividing the remainder of whatever
-*/
+        
+        Finally,
+        Calculate the ounces by creating a placeholder variable (interVariable) to hold the value of total kilos as an integer
+        Then, calculate the number of grams by: subtracting the total kilos from the intervariable value and multiply by 1000
+
+        var interimVariable = parseInt(totalKilos);
+        var numofGrams = parseFloat((totalKilos) - interimVariable)*1000;
+
+6. Output the information to the user
+  
+   Program END
+   */
 
 "use strict";
 
@@ -50,22 +60,15 @@ function main() {
 
     var metricTons = parseInt(totalKilos / 1000); //working
 
-    var varkilos =  parseInt(totalKilos - (1000 * numofTons)); //working
+    var varkilos =  parseInt(totalKilos - (numofTons * 1000)); //working
     
-    
-    var remainingOunces = parseFloat(totalOunces - totalKilos);
-    var numofGrams = (remainingOunces / 28.35);
-
-    //Forumula for the number of grams: Take the total ounces, minus the tons and kilos and whatever is left 
-    //(modulus) is the remainder of ounces which have to be converted into grams.
-
-        console.log("The total ounces are: " + totalOunces);
-        console.log("the metric tons are: " + metricTons);
-        console.log("The kilos are: " + varkilos);
-       console.log("The grams are: " + numofGrams);
-
-    //Output
-    var outputText = `The metric weight is ${metricTons} metric tons, ${varkilos} kilos, and ${numofGrams}`; 
+    //Calculations cont'd for number of grams:   
+    //Make a placeholder variable called interimVariable to hold the value of totalkilos as an integer  
+    var interimVariable = parseInt(totalKilos);
+    var numofGrams = parseFloat((totalKilos) - interimVariable)*1000;
+   
+    //Output of the three variables:
+    var outputText = `\nThe metric weight is ${metricTons} metric tons, ${varkilos} kilos, and ${numofGrams.toFixed(1)} grams.`; 
     console.log(outputText); 
 
 }

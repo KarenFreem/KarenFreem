@@ -10,11 +10,11 @@ cost for the customer. It includes the company's markup.
 
 Pseudocode:
 1.	Program START
-2.	Prompt to ask the user to enter their name and store it in a variable called custName
-3.	Prompt to ask the user for their distance in kilometers for delivery and store it in a variable called deliveryDist
-4.	Prompt to ask the user for the cost of records purchased and store it in a variable called preTaxCost
-5.	Calculate the purchaseCost by multiplying the preTaxCost by 14% sales tax (1.14).
-6.	Calculate the deliveryCost by multiplying the deliveryDist by 15 ($15 is charged per kl for delivery.
+2.	Prompt the user to enter their name and store the name in a variable called custName
+3.	Prompt the user for the distance in kilometers for delivery and store this value in a variable called deliveryDist
+4.	Prompt the user for the cost of records purchased and store it in a variable called preTaxCost
+5.	Calculate the purchaseCost by multiplying the preTaxCost by 14% sales tax (Multiplying by 1.14 calculates the original amount AND tax).
+6.	Calculate the deliveryCost by multiplying the deliveryDist by 15 ($15 is charged for every kl).
 7.	Calculate the total cost by adding the purchase cost to the delivery cost (purchaseCost + deliveryCost).
 8.	Display all the variable values to the user. 
 9.	Program END 
