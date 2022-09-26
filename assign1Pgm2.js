@@ -5,7 +5,7 @@ Student: Karen Freeman
 Date: Sept 21, 2022
 Description: This application helps calculate the weekly payment on a loan for the user
 
-Pseudocode:
+PSEUDOCODE:
 Weekly Loan Calculator
 Program START
 Prompt the user to enter the amount of their loan and save it in the variable called loanAmount
@@ -66,7 +66,7 @@ function main()
     //console.log(`The loanAmount is: $${loanAmount.toFixed(2)}`);
     //console.log(`The interest rate is: ${interestRate}`);
     //console.log(`The years are: ${years}\n`);
-    
+
     console.log(`\nYour weekly payment will be: $${weeklyPayment.toFixed(2)}`);
     
  }

@@ -8,7 +8,7 @@ cost for the customer. It includes the company's markup.
 
 --Making a change
 
-Pseudocode:
+PSEUDOCODE:
 1.	Program START
 2.	Prompt the user to enter their name and store the name in a variable called custName
 3.	Prompt the user for the distance in kilometers for delivery and store this value in a variable called deliveryDist

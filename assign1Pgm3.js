@@ -7,7 +7,7 @@ Description: This application converts imperial measure t0 metric
 
 Imperial to Metric Conversion
 
-Pseudocode:
+PSEDUOCODE:
 Program START
 1.Prompt the user to enter the number of tons
 2.Prompt the user to enter the number of stone
