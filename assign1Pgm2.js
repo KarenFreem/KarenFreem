@@ -43,7 +43,7 @@ var readlineSync = require("readline-sync");
 function main()
 {
     // Variables
-    //Input heading for Company
+    //Output: heading for Company
     console.log("Weekly Loan Calculator\n");
     
      //Input

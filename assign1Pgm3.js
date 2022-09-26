@@ -24,6 +24,7 @@ Program START
         Calculate the tons by doing the following calculations:
                 use parseInt function to break down the kilos: 
                 metric tons = parseInt(kilos/1000)
+Calculate the ounces by dividing the remainder of whatever
 */
 
 "use strict";
@@ -43,22 +44,31 @@ function main() {
     var numofOunces = parseInt(readlineSync.question("Enter the number of ounces: "));
 
     //Calculations
-    var totalOunces = parseInt((35840 * numofTons) + (224 * numofStones) + (16 * numofPounds) + numofOunces);
-    var totalKilos = parseInt(totalOunces / 35.274);
-    var metricTons = parseInt(totalKilos / 1000);
-    var varkilos =  parseInt(totalKilos - (1000 * numofTons));
-  
-   
-    console.log("the metric tons are: " + metricTons);
-    console.log("The kilos are: " + varkilos);
-   // console.log("The grams are: " + );
+    var totalOunces = parseFloat((35840 * numofTons) + (224 * numofStones) + (16 * numofPounds) + numofOunces); //working
+
+    var totalKilos = parseFloat(totalOunces / 35.274); //working
+
+    var metricTons = parseInt(totalKilos / 1000); //working
+
+    var varkilos =  parseInt(totalKilos - (1000 * numofTons)); //working
+    
+    
+    var remainingOunces = parseFloat(totalOunces - totalKilos);
+    var numofGrams = (remainingOunces / 28.35);
+
+    //Forumula for the number of grams: Take the total ounces, minus the tons and kilos and whatever is left 
+    //(modulus) is the remainder of ounces which have to be converted into grams.
+
+        console.log("The total ounces are: " + totalOunces);
+        console.log("the metric tons are: " + metricTons);
+        console.log("The kilos are: " + varkilos);
+       console.log("The grams are: " + numofGrams);
 
     //Output
-    var outputText = `The metric weight is ${metricTons} metric tons, ${varkilos} kilos, and`; 
+    var outputText = `The metric weight is ${metricTons} metric tons, ${varkilos} kilos, and ${numofGrams}`; 
     console.log(outputText); 
 
 }
-
 // DO NOT EDIT: Trigger our main function to launch the program
 if (require.main === module) {
     main();
